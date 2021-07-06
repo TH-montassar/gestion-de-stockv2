@@ -1,4 +1,4 @@
-package com.stock.mvc;
+package com.stock.mvc.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,7 +12,7 @@ public class Test {
 		FlickrDaoImpl flickr = new FlickrDaoImpl();
 	//	flickr.auth();
 		try {
-			InputStream stream = new FileInputStream(new File("D:\\aaa.jpg"));
+			InputStream stream = new FileInputStream(new File("D:\\bbb.jpg"));
 			String url = flickr.savePhoto(stream, "myImage");
 			System.out.println(url);
 		} catch (Exception e) {
